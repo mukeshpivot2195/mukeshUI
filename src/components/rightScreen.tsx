@@ -29,6 +29,7 @@ const RightScreen : React.FunctionComponent = () => {
 
   return (
     <>
+   
       {selectedBrand ? (
         <BeverageContainer
           goback={backButton}
@@ -39,6 +40,8 @@ const RightScreen : React.FunctionComponent = () => {
       ) : (
         <BrandContainer beverageId={(id: any) => selectBrand(id)} />
       )}
+
+  
     </>
   );
 };

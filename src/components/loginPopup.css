@@ -1,0 +1,23 @@
+.password-input{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.password-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.password-btn button{
+    width: 31%;
+    margin: 1%;
+}
+
+.password-modal .MuiTypography-body1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.password-modal .MuiDialogActions-root{
+    justify-content: center;
+}
