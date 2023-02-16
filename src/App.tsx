@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+import {Routes, Route } from "react-router-dom"
 import "./App.css";
 import type { IKosRegistry } from "@coca-cola/kos-ui-core";
 import {
@@ -13,6 +14,7 @@ import { BeverageFactory } from "./models/beverage/beverage-factory";
 import { BeverageModel } from "./models/beverage/beverage-model";
 import { BrandFactory } from "./models/brand/brand-factory";
 import { BrandModel } from "./models/brand/brand-model";
+import Home from "./components/loginPopup";
 
 export const Registry: IKosRegistry = {
   models: {
@@ -37,7 +39,11 @@ function App() {
     <ErrorBoundaryWithFallback>
       <Suspense fallback={<LoadingMessage></LoadingMessage>}>
         <KosCoreContextProvider>
-          <DispenserRoot></DispenserRoot>
+          <Routes>
+          <Route path="/" element={<DispenserRoot/>} />
+          {/* <Route path="/home" element={<Home/>} /> */}
+          </Routes>
+          {/* <DispenserRoot></DispenserRoot> */}
         </KosCoreContextProvider>
       </Suspense>
     </ErrorBoundaryWithFallback>
