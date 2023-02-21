@@ -41,10 +41,7 @@ const Setup =()=>{
             </CardActions>
             </Card>
                 
-                    
-                   
-
-                    
+             
             </Grid>
         </Grid>
         </Box>

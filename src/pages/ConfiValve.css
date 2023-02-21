@@ -1,0 +1,68 @@
+.fullborder  {
+
+    border: 1px solid #060606df;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+    /* border-right: 20px; */
+}
+
+.fullborder1  {
+
+    padding-left: 30px;
+    padding-top: 30px;
+    border: 1px solid #000;
+}
+
+
+.fullborder2  {
+
+    padding-left: 3rem;
+    padding-right: 4rem;
+}
+.firstgrid {
+    border: 1px solid #000;
+    padding: 1rem 2rem 1rem 5rem;
+}
+.btn1 {
+padding-top: 3rem;
+padding-left: 20px;
+
+}
+
+.btn2 {
+padding-left: 1300px;
+    
+}
+
+.title {
+    margin-bottom: 20px;
+}
+.DIV1 {
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+.padding1 {
+
+    padding-left: 20px;
+}
+/* 
+#btn {
+
+    border: solid 5px blue; padding:5px; 
+} */
+#btn:hover {
+    background-color: green;
+
+}
+
+#btn:active {
+    background-color: green !important;
+    
+}
+
+#btnx:active {
+    background-color: red;
+}

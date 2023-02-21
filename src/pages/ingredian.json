@@ -1,0 +1,27 @@
+[
+    {
+        "id": "11",
+        "name": "Sprite",
+        "type": "CARB_BEV"
+    },
+    {
+        "id": "1",
+        "name": "water",
+        "type": "WATER"
+    },
+    {
+        "id": "12",
+        "name": "Fanta",
+        "type": "CARB_BEV"
+    },
+    {
+        "id": "2",
+        "name": "carb",
+        "type": "CARB"
+    },
+    {
+        "id": "10",
+        "name": "Coke",
+        "type": "CARB_BEV"
+    }
+]

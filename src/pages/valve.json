@@ -1,0 +1,554 @@
+[
+    {
+        "pumps": [
+            {
+                "category": "water",
+                "inserted": true,
+                "beveragePour": true,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "ingredientId": "1",
+                "holderPath": "assembly.core.holder:PW2",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "pw",
+                "path": "assembly.core.board:leftBoard.pump:pw"
+            }
+        ],
+        "slice": {},
+        "assemblyName": "core",
+        "name": "PW2",
+        "syrupType": "",
+        "path": "assembly.core.holder:PW2"
+    },
+    {
+        "pumps": [
+            {
+                "category": "water",
+                "inserted": true,
+                "beveragePour": true,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "ingredientId": "1",
+                "holderPath": "assembly.core.holder:PW1",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "pw",
+                "path": "assembly.core.board:rightBoard.pump:pw"
+            }
+        ],
+        "slice": {},
+        "assemblyName": "core",
+        "name": "PW1",
+        "syrupType": "",
+        "path": "assembly.core.holder:PW1"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S14",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "s6",
+                "path": "assembly.core.board:leftBoard.pump:s6"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S14",
+        "syrupType": "",
+        "path": "assembly.core.holder:S14"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S13",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "s5",
+                "path": "assembly.core.board:leftBoard.pump:s5"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S13",
+        "syrupType": "",
+        "path": "assembly.core.holder:S13"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": true,
+                "beveragePour": true,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "ingredientId": "10",
+                "holderPath": "assembly.core.holder:S12",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "s4",
+                "path": "assembly.core.board:leftBoard.pump:s4"
+            }
+        ],
+        "slice": {},
+        "assemblyName": "core",
+        "name": "S12",
+        "syrupType": "",
+        "path": "assembly.core.holder:S12"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": true,
+                "beveragePour": true,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "ingredientId": "12",
+                "holderPath": "assembly.core.holder:S11",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "s3",
+                "path": "assembly.core.board:leftBoard.pump:s3"
+            }
+        ],
+        "slice": {},
+        "assemblyName": "core",
+        "name": "S11",
+        "syrupType": "",
+        "path": "assembly.core.holder:S11"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": true,
+                "beveragePour": true,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "ingredientId": "11",
+                "holderPath": "assembly.core.holder:S10",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "s2",
+                "path": "assembly.core.board:leftBoard.pump:s2"
+            }
+        ],
+        "slice": {},
+        "assemblyName": "core",
+        "name": "S10",
+        "syrupType": "",
+        "path": "assembly.core.holder:S10"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:A1",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "a1",
+                "path": "assembly.core.board:leftBoard.pump:a1"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "A1",
+        "syrupType": "",
+        "path": "assembly.core.holder:A1"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:A2",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "a2",
+                "path": "assembly.core.board:leftBoard.pump:a2"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "A2",
+        "syrupType": "",
+        "path": "assembly.core.holder:A2"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:A3",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "a3",
+                "path": "assembly.core.board:leftBoard.pump:a3"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "A3",
+        "syrupType": "",
+        "path": "assembly.core.holder:A3"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:A4",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "a4",
+                "path": "assembly.core.board:leftBoard.pump:a4"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "A4",
+        "syrupType": "",
+        "path": "assembly.core.holder:A4"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:A5",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "a1",
+                "path": "assembly.core.board:rightBoard.pump:a1"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "A5",
+        "syrupType": "",
+        "path": "assembly.core.holder:A5"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:A6",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "a2",
+                "path": "assembly.core.board:rightBoard.pump:a2"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "A6",
+        "syrupType": "",
+        "path": "assembly.core.holder:A6"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:A7",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "a3",
+                "path": "assembly.core.board:rightBoard.pump:a3"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "A7",
+        "syrupType": "",
+        "path": "assembly.core.holder:A7"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:A8",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "a4",
+                "path": "assembly.core.board:rightBoard.pump:a4"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "A8",
+        "syrupType": "",
+        "path": "assembly.core.holder:A8"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S1",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "s1",
+                "path": "assembly.core.board:rightBoard.pump:s1"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S1",
+        "syrupType": "",
+        "path": "assembly.core.holder:S1"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S3",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "s3",
+                "path": "assembly.core.board:rightBoard.pump:s3"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S3",
+        "syrupType": "",
+        "path": "assembly.core.holder:S3"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S2",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "s2",
+                "path": "assembly.core.board:rightBoard.pump:s2"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S2",
+        "syrupType": "",
+        "path": "assembly.core.holder:S2"
+    },
+    {
+        "pumps": [
+            {
+                "category": "water",
+                "inserted": true,
+                "beveragePour": true,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "ingredientId": "2",
+                "holderPath": "assembly.core.holder:CW1",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "cw",
+                "path": "assembly.core.board:rightBoard.pump:cw"
+            }
+        ],
+        "slice": {},
+        "assemblyName": "core",
+        "name": "CW1",
+        "syrupType": "",
+        "path": "assembly.core.holder:CW1"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S5",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "s5",
+                "path": "assembly.core.board:rightBoard.pump:s5"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S5",
+        "syrupType": "",
+        "path": "assembly.core.holder:S5"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S4",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "s4",
+                "path": "assembly.core.board:rightBoard.pump:s4"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S4",
+        "syrupType": "",
+        "path": "assembly.core.holder:S4"
+    },
+    {
+        "pumps": [
+            {
+                "category": "water",
+                "inserted": true,
+                "beveragePour": true,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "ingredientId": "2",
+                "holderPath": "assembly.core.holder:CW2",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "cw",
+                "path": "assembly.core.board:leftBoard.pump:cw"
+            }
+        ],
+        "slice": {},
+        "assemblyName": "core",
+        "name": "CW2",
+        "syrupType": "",
+        "path": "assembly.core.holder:CW2"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S7",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "s7",
+                "path": "assembly.core.board:rightBoard.pump:s7"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S7",
+        "syrupType": "",
+        "path": "assembly.core.holder:S7"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S6",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "s6",
+                "path": "assembly.core.board:rightBoard.pump:s6"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S6",
+        "syrupType": "",
+        "path": "assembly.core.holder:S6"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": true,
+                "beveragePour": true,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "ingredientId": "10",
+                "holderPath": "assembly.core.holder:S9",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "s1",
+                "path": "assembly.core.board:leftBoard.pump:s1"
+            }
+        ],
+        "slice": {},
+        "assemblyName": "core",
+        "name": "S9",
+        "syrupType": "",
+        "path": "assembly.core.holder:S9"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S8",
+                "nozzlePath": "assembly.core.nozzle:rightNozzle",
+                "boardPath": "assembly.core.board:rightBoard",
+                "name": "s8",
+                "path": "assembly.core.board:rightBoard.pump:s8"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S8",
+        "syrupType": "",
+        "path": "assembly.core.holder:S8"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S16",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "s8",
+                "path": "assembly.core.board:leftBoard.pump:s8"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S16",
+        "syrupType": "",
+        "path": "assembly.core.holder:S16"
+    },
+    {
+        "pumps": [
+            {
+                "inserted": false,
+                "beveragePour": false,
+                "ingredientPour": true,
+                "type": "lancer.valve",
+                "holderPath": "assembly.core.holder:S15",
+                "nozzlePath": "assembly.core.nozzle:leftNozzle",
+                "boardPath": "assembly.core.board:leftBoard",
+                "name": "s7",
+                "path": "assembly.core.board:leftBoard.pump:s7"
+            }
+        ],
+        "assemblyName": "core",
+        "name": "S15",
+        "syrupType": "",
+        "path": "assembly.core.holder:S15"
+    }
+]
