@@ -14,6 +14,7 @@ import { BeverageFactory } from "./models/beverage/beverage-factory";
 import { BeverageModel } from "./models/beverage/beverage-model";
 import { BrandFactory } from "./models/brand/brand-factory";
 import { BrandModel } from "./models/brand/brand-model";
+import Setup from "./pages/setup";
 
 export const Registry: IKosRegistry = {
   models: {
@@ -41,8 +42,12 @@ function App() {
           <DispenserRoot></DispenserRoot>
         </KosCoreContextProvider>
       </Suspense>
+
     </ErrorBoundaryWithFallback>
-  );
+    
+      );
+
+      
 }
 
 export default App;
