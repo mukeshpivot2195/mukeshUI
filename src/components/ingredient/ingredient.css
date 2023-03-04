@@ -1,0 +1,26 @@
+.holder-btn.MuiButton-root,
+.holder-btn.MuiButton-root:hover{
+    background-color:#ff560e ;
+}
+.selected-btn.MuiButton-root,
+.selected.MuiButton-root{
+    background-color: #6ace7f;
+}
+.unassigned.MuiButton-root{
+    background-color: #f79900;
+}
+.ingredient-btn.MuiButton-root,
+.ingredient-btn.MuiButton-root:hover{
+    background-color: #d7b85b
+}
+.bottom-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-btn button,
+.bottom-btn button:hover{
+    background-color: #6ac9ce;
+}
+.closeBtn {
+    cursor: pointer;
+}

@@ -1,15 +1,10 @@
-import type { IKosModelContainer } from "@coca-cola/kos-ui-core";
+import { IKosDataModel, IKosModelContainer } from "@coca-cola/kos-ui-core";
+import {NozzleModel} from "../../nozzle";
 
-declare interface IDispenserOptions {}
+export interface IDispenserOptions {}
 
-declare interface IDispenserModel extends IDispenserOptions, IKosDataModel {
+export interface IDispenserModel extends IDispenserOptions, IKosDataModel {
   id: string;
-  brandset?: BrandsetResponse;
-  beverages: IKosModelContainer<IBeverageModel>;
-  brands: IKosModelContainer<IBrandModel>;
-}
-
-declare interface BrandsetResponse {
-  brands: BrandResponse[];
-  beverages: BeverageResponse[];
+  name: string;
+  nozzles: IKosModelContainer<NozzleModel>;
 }

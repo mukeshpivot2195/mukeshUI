@@ -1,0 +1,29 @@
+.nozzle-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.nozzle-box button {
+  text-transform: capitalize;
+}
+
+.MuiButton-root.nozzle-btns {
+  background: #d7b85b;
+}
+.nozzle-box .MuiTypography-body1 {
+  font-weight: 500;
+  font-size: 22px;
+  margin: 20px 0 10px;
+}
+.setup-container .MuiCardActions-root button {
+  background: #6ac9ce;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 5px 20px;
+}
+.setup-container .MuiCardActions-root button.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.12);
+}

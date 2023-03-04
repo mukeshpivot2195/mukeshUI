@@ -1,62 +1,74 @@
-import { kosModel } from "@coca-cola/kos-ui-core";
-import { DispenserFactory } from "./dispenser-factory";
-import { kosAction, KosLog, KosModelContainer } from "@coca-cola/kos-ui-core";
-import { IKosModelContainer } from "@coca-cola/kos-ui-core";
-import { BrandsetResponse, IDispenserModel, IDispenserOptions } from "./types";
-import { getBrandset } from "./services/dispenser-services";
-import { BrandFactory } from "../brand/brand-factory";
-import { IBrandModel } from "../brand/types";
-import { BeverageFactory } from "../beverage/beverage-factory";
+import { kosModel, KosLog, Kos, KosModelContainer, IKosModelContainer } from "@coca-cola/kos-ui-core";
+import { IDispenserModel, IDispenserOptions } from "./types";
+import {Nozzle, NozzleModel} from "../nozzle";
+
+const MODEL_TYPE = "dispenser-model";
 
 const log = KosLog.getLogger("dispenser-model");
-@kosModel<IDispenserModel, IDispenserOptions>(DispenserFactory.type)
-export class DispenserModel implements IDispenserModel {
-  id: string;
-  brandset?: BrandsetResponse;
-  beverages: IKosModelContainer<IBeverageModel>;
-  brands: IKosModelContainer<IBrandModel>;
 
-  constructor(modelId: string) {
-    // assign the id from the passed in model id
+@kosModel<IDispenserModel, IDispenserOptions>(MODEL_TYPE)
+class DispenserModel implements IDispenserModel {
+  id: string;
+  name: string;
+  nozzles: IKosModelContainer<NozzleModel>;
+  constructor(modelId: string, options: IDispenserOptions) {
     this.id = modelId;
-    this.beverages = new KosModelContainer();
-    this.brands = new KosModelContainer();
+    this.name = "";
+    this.nozzles = new KosModelContainer<NozzleModel>({indexMap: {
+      name: "name"
+    }});
+
   }
 
+  // -------------------LIFECYCLE----------------------------
+
+  /**
+   * Initialize the model by creating the required nozzles for the dispenser
+   * passing in the name and description of the nozzle. The name is the alias for
+   * the nozzle info defined as part of the dispenser assembly.  The description is 
+   * a human readable label of the nozzle that will be used in the UI.
+   * 
+   * For this example we are creating two nozzles, left and right corresponding to the
+   * two nozzles defined in the dispenser assembly.
+   * 
+   */
   async init(): Promise<void> {
-    console.log("initialized model");
+    log.debug("initializing dispenser");
+    const leftNozzle = Nozzle.factory("assembly.core.board:leftNozzle")({
+      name: "left",
+      description: "Left Nozzle",
+      
+    });
+    this.nozzles.addModel(leftNozzle);
+
+    const rightNozzle = Nozzle.factory("assembly.core.board:rightNozzle")({
+      name: "right",
+      description: "Right Nozzle",
+     
+    });
+    this.nozzles.addModel(rightNozzle);
+
+
   }
 
   async load(): Promise<void> {
-    try {
-      // log.info("loading dispenser model");
-      const response = await getBrandset(this.id);
-      log.debug(`received response ${response}`);
-      kosAction(() => {
-        this.brandset = response as unknown as BrandsetResponse;
+    log.debug("loading dispenser");
 
-        // use response?.data once the uiSchema is sourced from an endpoint.
-        this.brandset?.beverages.forEach((beverage) => {
-          const beverageModel = BeverageFactory.build(String(beverage.id), {
-            name: beverage.name,
-            icon: beverage.icon,
-            color: beverage.color,
-          });
-          this.beverages.addModel(beverageModel);
-        });
-        this.brandset?.brands.forEach((brand) => {
-          const brandModel = BrandFactory.build(String(brand.id), {
-            name: brand.name,
-            beverageRefs: brand.beverages.map((b: string) => String(b)),
-          });
-          this.brands.addModel(brandModel);
-        });
-      });
+  }
 
-      // alternately could call updateName rather than using the kosAction closure.
-    } catch (e) {
-      log.error(e);
-      throw e;
-    }
+  getChildren() {
+    return this.nozzles.data;
   }
 }
+
+const Registration = {
+  registration: {
+    [MODEL_TYPE]: {
+      class: DispenserModel,
+      singleton: true,
+    },
+  },
+  type: MODEL_TYPE,
+  factory: Kos.Factory.create<IDispenserModel, IDispenserOptions>(MODEL_TYPE),
+};
+export default Registration;
